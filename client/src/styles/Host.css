@@ -1,0 +1,12 @@
+.toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text {
+    font-size: 32px;
+    color: #fff;
+    margin-right: 20px;
+}

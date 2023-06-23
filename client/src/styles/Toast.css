@@ -1,0 +1,9 @@
+@import "react-toastify/dist/ReactToastify.css";
+@import "Theme.css";
+
+:root {
+    --toastify-color-success: var(--primary-color);
+    --toastify-color-error: var(--error-color);
+}
+
+

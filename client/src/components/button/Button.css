@@ -1,0 +1,11 @@
+.click {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.click:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}

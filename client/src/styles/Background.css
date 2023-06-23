@@ -1,0 +1,11 @@
+@import "Theme.css";
+
+.background {
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+.background-present {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}

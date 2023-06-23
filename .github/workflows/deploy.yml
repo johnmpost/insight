@@ -1,0 +1,51 @@
+name: deploy to johns server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+
+    - name: Install client dependencies
+      working-directory: ./client
+      run: npm install
+    - name: Install server dependencies
+      working-directory: ./server
+      run: npm install
+    - name: Build client
+      working-directory: ./client
+      run: npm run build
+    - name: Build server
+      working-directory: ./server
+      run: npm run build
+
+    - name: deploy react app to server
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rc --delete"
+          SOURCE: "./client/build/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: /srv/insight/client/build/
+    - name: deploy express api to server
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rc --delete"
+          SOURCE: "./server/build/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: /srv/insight/server/build/
+          SCRIPT_AFTER: "/home/insight-server/.nvm/versions/node/v18.14.2/bin/pm2 reload all"

@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #4169E1;
+  --background-color: #282c34;
+  --text-on-primary-color: #ffffff;
+  --text-input-background-color: #ffffff;
+  --text-input-border-color: #d0d0d0;
+  --text-input-text-color: #000000;
+  --error-color: #e74c3c;
+}

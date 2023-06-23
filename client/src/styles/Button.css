@@ -1,0 +1,35 @@
+@import "Theme.css";
+
+.large-button {
+    height: 128px;
+    width: 500px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 64px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500 ;
+    cursor: pointer;
+    color: var(--text-on-primary-color);
+}
+
+.large-button:hover {
+    opacity: 0.5;
+}
+
+.small-button {
+    height: 96px;
+    width: 320px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 48px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500 ;
+    cursor: pointer;
+    color: var(--text-on-primary-color);
+}
+
+.small-button:hover {
+    opacity: 0.5;
+}

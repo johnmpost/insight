@@ -1,0 +1,88 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  
+.modal-main {
+    position: fixed;
+    background: white;
+    width: 30%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    border-color: #4169E1;
+    border-style: solid;
+    border-width: 5px;
+  }
+  
+.display-block {
+    display: block;
+}
+  
+.display-none {
+    display: none;
+}
+
+.button {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.question-box {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.header {
+  color: #4169E1;
+}
+
+.list-modal {
+  flex-direction: column;
+  display: flex;
+}
+
+.sub {
+  margin-left: 10px;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+
+.left-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yaml-area {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: 250px;
+  resize: none;
+}
