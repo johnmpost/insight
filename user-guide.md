@@ -64,6 +64,8 @@
 
 ### Example
 
+This is an example of a full question set. You can copy this text into a .yml file and use it in the app.
+
 ```
 - prompt: "Please list your favorite color."
   type: "freeResponse"
