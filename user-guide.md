@@ -6,7 +6,7 @@
 
 - question sets are represented in YAML as a list of questions
 - the fields on a question are explained in detail below
-- the list of questions may only include one question
+- the list of questions might only include one question
 - files uploaded to insight must be of type .yml
 - you must use valid YAML syntax, but you can use any valid YAML syntax
 
