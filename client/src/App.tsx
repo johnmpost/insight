@@ -5,7 +5,6 @@ import Host from "./screens/host/Host";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Help from "./screens/help/Help";
 import "./styles/Toast.css";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/join" element={<Join />} />
             <Route path="/host" element={<Host />} />
-            <Route path="/help" element={<Help />} />
           </Routes>
         </Router>
       </FrontendProvider>

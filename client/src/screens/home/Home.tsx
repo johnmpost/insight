@@ -16,24 +16,25 @@ function Home() {
     navigate("/host");
   }
 
-  function handleHelp() {
-    navigate("/help");
-  }
-
   return (
     <div className="background">
       <div style={{ height: "90px" }}>
-        <FontAwesomeIcon
-          icon={faCircleQuestion}
-          style={{
-            color: "#ffffff",
-            fontSize: 45,
-            paddingLeft: "30px",
-            paddingTop: "30px",
-            cursor: "pointer",
-          }}
-          onClick={handleHelp}
-        />
+        <a
+          href="https://github.com/johnmpost/insight/blob/main/user-guide.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faCircleQuestion}
+            style={{
+              color: "#ffffff",
+              fontSize: 45,
+              marginLeft: "30px",
+              marginTop: "30px",
+              cursor: "pointer",
+            }}
+          />
+        </a>
       </div>
       <div
         style={{
