@@ -49,9 +49,9 @@
 
 - `answers`
 
-  - a list of `Answer` values
+  - a list of answer values
   - this field is used for multiple choice and select-many questions, and determines both the possible answer options and the correct answers
-  - an `Answer` value has two fields:
+  - an answer value has two fields:
     - `text`
       - any string
       - this field determines what the test of the answer option is
@@ -59,10 +59,10 @@
     - `isCorrect`
       - a boolean value that can be `true` or `false`
       - this field is optional, and defaults to nothing if not provided
-  - important: **all** or **none** of the `Answer`s must have `isCorrect` provided
-  - if no `Answer`s have `isCorrect` provided, the question becomes ungraded (no correct or incorrect answers)
+  - important: **all** or **none** of the answers must have `isCorrect` provided
+  - if no answers have `isCorrect` provided, the question becomes ungraded (no correct or incorrect answers)
 
-### Examples
+### Example
 
 ```
 - prompt: "Please list your favorite color."
@@ -72,9 +72,7 @@
   correctAnswers:
     - "Red"
     - "Orange"
-```
 
-```
 - prompt: "What is your favorite color?"
   type: "multipleChoice"
   answers:
@@ -86,9 +84,7 @@
       isCorrect: false
     - text: "Green"
       isCorrect: true
-```
 
-```
 - prompt: "Select your favorite color(s)."
   type: "selectMany"
   timeLimit: 45
