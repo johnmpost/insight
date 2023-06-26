@@ -59,7 +59,7 @@
     - `isCorrect`
       - a boolean value that can be `true` or `false`
       - this field is optional, and defaults to nothing if not provided
-  - important: **all** or **none** of the answers must have `isCorrect` provided
+  - important: either **all** or **none** of the answers must have `isCorrect` provided
   - if no answers have `isCorrect` provided, the question becomes ungraded (no correct or incorrect answers)
 
 ### Example
