@@ -1,0 +1,21 @@
+# Contributing Guidelines
+
+Thank you for considering contributing to insight! We appreciate your time and effort to make it better. Before you start, please take a moment to review the following guidelines:
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvements, please open an issue on GitHub.
+
+## Making Contributions
+
+1. Fork the repository and create a new branch.
+2. Make your changes, improvements, or bug fixes.
+3. Ensure your code adheres to our coding style.
+4. Test your changes if necessary.
+5. Submit a pull request, clearly describing the problem and solution.
+
+## License Agreement
+
+By contributing to this project, you agree that your contributions fall under the same license as the project. Details can be found in the `LICENSE` file.
+
+We appreciate your support and collaboration to make this project successful!
