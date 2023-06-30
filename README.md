@@ -6,7 +6,7 @@ Insight is a lightweight, minimalist polling app for power users.
 
 The Unix philosophy advocates for creating small, focused tools that do one thing well and can be easily combined with other tools to create more complex functionality. Similarly, the KISS principle (Keep It Simple, Stupid) encourages developers to prioritize simplicity and clarity over complexity and feature bloat.
 
-Insight doesn't require user registration, passwords, or specific user roles, as these add unnecessary complexity to the app. Instead, it uses short-lived secrets to authenticate requests and allows any user to host or participate in a session. This approach greatly simplifies the codebase and makes it easier to maintain and update.
+By choosing to focus on "power users" as our target audience, we can adhere to these principles and focus our development efforts in the most efficient manner.
 
 # How to Run Locally
 
