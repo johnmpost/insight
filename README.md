@@ -2,6 +2,8 @@
 
 Insight is a lightweight, minimalist polling app for power users.
 
+Insight is a work-in-progress app. There is full functionality, but it still needs some polishing :)
+
 # Insight's Development Philosophy
 
 The Unix philosophy advocates for creating small, focused tools that do one thing well and can be easily combined with other tools to create more complex functionality. Similarly, the KISS principle (Keep It Simple, Stupid) encourages developers to prioritize simplicity and clarity over complexity and feature bloat.
