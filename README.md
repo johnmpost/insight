@@ -31,7 +31,3 @@ By choosing to focus on "power users" as our target audience, we can adhere to t
 # The "Question" Question
 
 Insight decouples the polling problem from the question management problem. To use questions in a session, you simply upload them to the session. We believe existing external tools can easily work _with_ Insight to achieve any desired question management approach. For example, storing, sharing, organizing, and editing questions with permissions can be achieved easily through a git repository hosted on GitHub.
-
-# Features
-
-todo
