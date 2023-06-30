@@ -23,6 +23,7 @@ function Home() {
           href="https://github.com/johnmpost/insight/blob/main/user-guide.md"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ cursor: "default" }}
         >
           <FontAwesomeIcon
             icon={faCircleQuestion}
